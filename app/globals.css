@@ -2,26 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+.m {
+    border-radius: 2px;
+    background: #f7f7f7;
+    box-shadow: 5px 5px 21px #636363,
+      -5px -5px 21px #ffffff;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  
+  .bbutton {
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+      -6px -6px 12px #ffffff;
+  }
+  
+  .bbutton:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+      inset -4px -4px 12px #ffffff;
+  }
+  
+  .input {
+    border-radius: 10px;
+    background: #f8e8e8;
+    box-shadow: 5px 5px 20px #635d5d,
+      -5px -5px 20px #ffffff;
+  }
+  
+  .nnn3 {
+    margin-top: 30px;
+    border-radius: 60px;
+    background: #f7f3f3;
+    box-shadow: 5px 5px 0px #606060,
+      -5px -5px 0px #ffffff;
+  }
+  
+  .per {
+    border-radius: 20px;
+    background: #f7f7f7;
+    box-shadow: 5px 5px 13px #636363,
+      -5px -5px 13px #ffffff;
+  }
+  
+  .per2 {
+    border-radius: 28px;
+    background: #ffffff;
+    box-shadow:  5px 5px 23px #666666,
+                 -5px -5px 23px #ffffff;
+  }
+  
+  .nnn5 {
+    border-radius: 50px;
+    background: #f1efef;
+    box-shadow: 5px 5px 5px #bcbaba,
+      -5px -5px 5px #ffffff;
+  }
