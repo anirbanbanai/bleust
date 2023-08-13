@@ -3,7 +3,7 @@ import React from 'react';
 const Createpost = () => {
     return (
         <div>
-            <h2 className='text-4xl'>CreatePost</h2>
+            <h2 className='text-3xl font-bold'>CreatePost</h2>
         </div>
     );
 };

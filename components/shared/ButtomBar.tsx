@@ -16,7 +16,7 @@ const ButtomBar = () => {
                     const isActive = (pathname.includes(link.route) && link.route.length > 1) || pathname === link.route;
                     return (
                         <Link className={`relative flex justify-start gap-4 rounded-lg p-4 ${isActive && "bg-red-500"}`} href={link.route} key={link.label}>
-                            <Image src={link.imgURL} alt={link.label} width={34} height={34} />
+                            <Image src={link.imgURL} alt={link.label} width={24} height={24} />
                             <p className=' max-lg:hidden'>{link.label}</p>
                         </Link>
                     )

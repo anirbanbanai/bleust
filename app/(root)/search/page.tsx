@@ -3,7 +3,7 @@
 const Search = () => {
     return (
         <div>
-            search
+            <h2 className="text-3xl font-bold">Search</h2>
         </div>
     );
 };
