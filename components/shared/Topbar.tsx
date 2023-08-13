@@ -7,9 +7,9 @@ import {dark} from "@clerk/themes"
 const Topbar = () => {
   const isUserLogin = true;
   return (
-    <nav className="bg-slate-200 p-5 fixed top-0 z-30 flex w-full items-center justify-between bg-dark-2 px-6 py-3">
+    <nav className="  bg-slate-200 p-5 fixed top-0 z-30 flex w-full items-center justify-between bg-dark-2 px-6 py-3">
       <Link href="/" className='flex items-center gap-5 '>
-        <Image  src="/logo.svg" alt="logo" width={55} height={55} />
+        <Image className="rounded-full "  src="/loo.svg" alt="logo" width={55} height={55} />
         <p className=" text-5xl font-bold max-xs:hidden">Bleust</p>
       </Link>
 
@@ -29,12 +29,12 @@ const Topbar = () => {
             </SignOutButton>
           </SignedIn>
     </div>
-    <OrganizationSwitcher   appearance={{
+    {/* <OrganizationSwitcher   appearance={{
       baseTheme:dark,
       elements:{
         organizationSwitcherTrigger:"py-2 px-4 text-black"
       }
-    }}/>
+    }}/> */}
    </div>
       
     </nav>
