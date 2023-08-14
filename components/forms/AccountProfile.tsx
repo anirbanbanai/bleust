@@ -191,7 +191,7 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
                 Bio
               </FormLabel>
 
-              <FormControl className="text-base-semibold text-gray-200">
+              <FormControl className="text-base-semibold  text-black">
                 <Textarea
                   rows={10}
                   className="input"
