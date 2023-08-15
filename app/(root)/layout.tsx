@@ -7,7 +7,7 @@ import { ClerkProvider } from "@clerk/nextjs"
 import { Inter } from "next/font/google"
 
 export const metadata = {
-  title: "Threads",
+  title: "Bleust",
   description: "A next.js 13 Meta Th application"
 }
 
