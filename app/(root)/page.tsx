@@ -1,7 +1,7 @@
 import { currentUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 
-// import Pagination from "@/components/shared/Pagination";
+import Pagination from "@/components/shared/Pagination";
 
 import BleustCard from "@/components/card/PoastCard";
 import { fetchUser } from "@/lib/actions/user.action";
@@ -33,26 +33,26 @@ async function Home({
           <>
             {result.posts.map((post) => (
               <BleustCard
-                key={post._id}
-                id={post._id}
-                currentUserId={user.id}
-                parentId={post.parentId}
-                text={post.text}
-                author={post.author}
-                community={post.community}
-                createAt={post.createdAt}
-                comments={post.children}
-              />
+              key={post._id}
+              id={post._id}
+              currentUserId={user.id}
+              parentId={post.parentId}
+              text={post.text}
+              author={post.author}
+              community={post.community}
+              createAt={post.createdAt}
+              comments={post.children}
+            />
             ))}
           </>
         )}
       </section>
 
-      {/* <Pagination
+      <Pagination
         path='/'
         pageNumber={searchParams?.page ? +searchParams.page : 1}
         isNext={result.isNext}
-      /> */}
+      />
     </>
   );
 }

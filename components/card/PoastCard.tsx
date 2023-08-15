@@ -1,3 +1,4 @@
+import { formatDateString } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -72,15 +73,15 @@ const BleustCard = ({
                                 <Image
                                     src='/assets/heart-gray.svg'
                                     alt='heart'
-                                    width={24}
+                                    width={34}
                                     height={24}
                                     className='cursor-pointer object-contain'
                                 />
-                                <Link href={`/thread/${id}`}>
+                                <Link href={`/bleust/${id}`}>
                                     <Image
                                         src='/assets/reply.svg'
                                         alt='heart'
-                                        width={24}
+                                        width={34}
                                         height={24}
                                         className='cursor-pointer object-contain'
                                     />
@@ -88,14 +89,14 @@ const BleustCard = ({
                                 <Image
                                     src='/assets/repost.svg'
                                     alt='heart'
-                                    width={24}
+                                    width={34}
                                     height={24}
                                     className='cursor-pointer object-contain'
                                 />
                                 <Image
                                     src='/assets/share.svg'
                                     alt='heart'
-                                    width={24}
+                                    width={34}
                                     height={24}
                                     className='cursor-pointer object-contain'
                                 />
@@ -147,10 +148,10 @@ const BleustCard = ({
                     href={`/communities/${community.id}`}
                     className='mt-5 flex items-center'
                 >
-                    {/* <p className='text-subtle-medium text-gray-1'>
+                    <p className='text-subtle-medium text-gray-1'>
             {formatDateString(createAt)}
             {community && ` - ${community.name} Community`}
-          </p> */}
+          </p>
 
                     <Image
                         src={community.image}
