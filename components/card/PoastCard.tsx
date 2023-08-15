@@ -103,7 +103,7 @@ const BleustCard = ({
                             </div>
 
                             {isComment && comments.length > 0 && (
-                                <Link href={`/thread/${id}`}>
+                                <Link href={`/bleust/${id}`}>
                                     <p className='mt-1 text-subtle-medium text-gray-1'>
                                         {comments.length} repl{comments.length > 1 ? "ies" : "y"}
                                     </p>
@@ -135,7 +135,7 @@ const BleustCard = ({
                         />
                     ))}
 
-                    <Link href={`/thread/${id}`}>
+                    <Link href={`/bleust/${id}`}>
                         <p className='mt-1 text-subtle-medium text-gray-1'>
                             {comments.length} repl{comments.length > 1 ? "ies" : "y"}
                         </p>
