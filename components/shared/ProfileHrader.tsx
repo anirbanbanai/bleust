@@ -50,7 +50,7 @@ function ProfileHeader({
                 height={16}
               />
 
-              <p className='text-light-2 max-sm:hidden'>Edit</p>
+              <p className=''>Edit</p>
             </div>
           </Link>
         )}
