@@ -69,6 +69,7 @@ const BleustCard = ({
                         </div>
 
                         <div className={`${isComment && "mb-10"} mt-5 flex flex-col gap-3`}>
+
                             <div className='flex gap-3.5'>
                                 <Image
                                     src='/assets/heart-gray.svg'
@@ -77,6 +78,7 @@ const BleustCard = ({
                                     height={24}
                                     className='cursor-pointer object-contain'
                                 />
+                                
                                 <Link href={`/bleust/${id}`}>
                                     <Image
                                         src='/assets/reply.svg'
